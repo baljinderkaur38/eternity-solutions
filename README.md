@@ -1,1 +1,1 @@
-# eternity-solutions
+# Eternity Solutions
