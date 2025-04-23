@@ -1,1 +1,1 @@
-# Eternity Solutions
+# Eternity Solution Company
