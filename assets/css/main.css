@@ -509,7 +509,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   position: relative;
 }
 
@@ -3574,4 +3574,7 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+.mb-25{
+  margin-bottom: 25px;
 }
