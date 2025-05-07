@@ -158,7 +158,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 83px;
+  max-height: 36px;
   margin-right: 8px;
 }
 
@@ -858,7 +858,7 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 56px;
 }
@@ -915,6 +915,12 @@ section,
 
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.hero-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 @media (max-width: 640px) {
