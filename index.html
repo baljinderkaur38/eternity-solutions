@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt=""> 
+        <img src="assets/img/logo-white.png" alt="">
         <!-- <h1 class="sitename">Eternity Solution Company</h1> -->
       </a>
 
@@ -55,53 +57,46 @@
   </header>
 
   <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="welcome-text">Welcome to</h2>
+        <h1 class="company-name">Eternity Solution Company</h1>
+        <p class="tagline">Deals in All Types of Industrial Solutions</p>
 
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg1.jpg" alt="" data-aos="fade-in" class="aos-init aos-animate">
-
-      <div class="container">
-
-        <div class="row justify-content-center text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-xl-6 col-lg-8">
-            <h2>Welcome to</h2>
-            <h2 class="blue-text">Eternity Solution Company</h2>
-            <p>Deals in All Types of Industrial Solutions</p>
-          </div>
-        </div>
-
-        <div class="row gy-4 mt-5 justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-xl-2 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i class="bi bi-tools"></i>
-              <h3><a href="">Deep Pneumatics</a></h3>
+        <div class="row gy-4 mt-5 justify-content-center">
+          <div class="col-xl-2 col-md-3 col-6">
+            <div class="logo-box text-center">
+              <a href="#"><img src="assets/img/clients/DeepPneumatics.png" alt="Deep Pneumatics" class="logo-img"></a>
             </div>
           </div>
-          <div class="col-xl-2 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-wrench-adjustable"></i>
-              <h3><a href="">Quick Air </a></h3>
+          <div class="col-xl-2 col-md-3 col-6">
+            <div class="logo-box text-center">
+              <a href="#"><img src="assets/img/clients/QuickAir.png" alt="Quick Air" class="logo-img"></a>
             </div>
           </div>
-          <div class="col-xl-2 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i class="bi bi-arrows-move"></i>
-              <h3><a href="">Carlstahl Craftman</a></h3>
+          <div class="col-xl-2 col-md-3 col-6">
+            <div class="logo-box text-center">
+              <a href="#"><img src="assets/img/clients/CarlstahlCraftman.png" alt="Carlstahl Craftman"
+                  class="logo-img"></a>
             </div>
           </div>
-          <div class="col-xl-2 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i class="bi bi-gear-wide-connected"></i>
-              <h3><a href="">Crane Craft India</a></h3>
+          <div class="col-xl-2 col-md-3 col-6">
+            <div class="logo-box text-center">
+              <a href="#"><img src="assets/img/clients/CraneCraftIndia.png" alt="Crane Craft India"
+                  class="logo-img"></a>
             </div>
           </div>
         </div>
+
 
       </div>
-
     </section>
 
+    <!-- /Hero Section -->
     <!-- Clients Section -->
+    <!--
     <section id="clients" class="clients section light-background">
 
       <div class="container" data-aos="zoom-in">
@@ -149,7 +144,7 @@
             <div class="swiper-slide"><img src="assets/img/clients/CarlStahl.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/Quickair.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/CraneCraftIndia.png" class="img-fluid" alt=""></div>
-          
+
             <div class="swiper-slide"><img src="assets/img/clients/DeepPneumatics.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/CarlStahl.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/Quickair.png" class="img-fluid" alt=""></div>
@@ -159,7 +154,9 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section>
+  -->
+    <!-- /Clients Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -172,23 +169,66 @@
       <div class="container">
 
         <div class="row gy-4">
-          <div class="col-lg-5 text-align-center" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-               
+          <!-- Image Carousel -->
+          <div class="col-lg-5  col-md-5 mb-4 mb-md-0">
+            <div id="aboutCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/people/about-0.jpg" class="carousel-img d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/people/about-1.jpg" class="carousel-img d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/people/about-2.jpg" class="carousel-img d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/people/about-3.jpg" class="carousel-img d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/people/about-4.jpg" class="carousel-img d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/people/about-5.jpg" class="carousel-img d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/people/about-6.jpg" class="carousel-img d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/people/about-7.jpg" class="carousel-img d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/people/about-8.jpg" class="carousel-img d-block w-100" alt="Image 3">
+                </div>
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
           </div>
-          <div class="col-lg-7 content" data-aos="fade-up" data-aos-delay="100">
-            <p>Established in Ludhiana, Punjab, Eternity Solution Company is a trusted dealer specialising in air compressors, air pipeline systems, hoists, and cranes. With a strong commitment to quality, safety, and performance, we provide industrial-grade equipment and solutions that power productivity and ensure operational efficiency across a wide range of industries</p>
-            <p>Our goal is simple: to deliver reliable and efficient systems that meet the demands of modern industrial environments. Whether you need a compact compressor, a complex air piping layout, or a heavy-duty hoisting and lifting solution, Eternity Solution Company has the expertise and products to get the job done right.</p> 
-             <p>Backed by years of industry experience and a customer-first approach, Eternity Solution Company is your reliable partner in industrial automation and lifting solutions. We don’t just deliver products — we deliver peace of mind.</p>   
+          <div class="col-lg-7 col-md-7 content" data-aos="fade-up" data-aos-delay="100">
+            <p>Established in Ludhiana, Punjab, Eternity Solution Company is a trusted dealer specialising in air
+              compressors, air pipeline systems, hoists, and cranes. With a strong commitment to quality, safety, and
+              performance, we provide industrial-grade equipment and solutions that power productivity and ensure
+              operational efficiency across a wide range of industries</p>
+            <p>Our goal is simple: to deliver reliable and efficient systems that meet the demands of modern industrial
+              environments. Whether you need a compact compressor, a complex air piping layout, or a heavy-duty hoisting
+              and lifting solution, Eternity Solution Company has the expertise and products to get the job done right.
+            </p>
+            <p>Backed by years of industry experience and a customer-first approach, Eternity Solution Company is your
+              reliable partner in industrial automation and lifting solutions. We don’t just deliver products — we
+              deliver peace of mind.</p>
           </div>
-  
-        
-
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
+    </section>
+    <!-- /About Section -->
 
     <!-- Why Us Section -->
     <section id="why-us" class="section why-us light-background" data-builder="section">
@@ -201,7 +241,8 @@
 
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
               <h3>Why Choose Us?</h3>
-             <p>We bring a balanced mix of technical knowledge, hands-on experience, and customer-focused service across all our offerings.</p> 
+              <p>We bring a balanced mix of technical knowledge, hands-on experience, and customer-focused service
+                across all our offerings.</p>
             </div>
 
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
@@ -254,57 +295,108 @@
 
 
 
-      <!-- Products Section -->
-      <section id="products" class="services section ">
+    <!-- Products Section -->
+    <section id="products" class="services section ">
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Products</h2>
-          <p>We specialise in providing top-quality industrial equipment and solutions to improve efficiency, safety, and performance.</p>
-        </div><!-- End Section Title -->
-  
-        <div class="container">
-  
-          <div class="row gy-4">
-  
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-tools icon"></i></div>
-                <h4>Deep Pneumatics</h4>
-                <p>Reliable supply and expert installation of industrial air compressors.</p>
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-wrench-adjustable icon"></i></div>
-                <h4>Quick Air </h4>
-                <p>Custom-designed pipeline systems for efficient air distribution.</p>
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-arrows-move icon"></i></div>
-                <h4>CarlStahl Craftman</h4>
-                <p>Durable hoisting and lifting systems tailored for industrial use.</p>
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-gear-wide-connected icon"></i></div>
-                <h4>Crane Craft India</h4>
-                <p>Comprehensive maintenance and support for long-term system performance.</p>
-              </div>
-            </div><!-- End Service Item -->
-  
-  
-          </div>
-  
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>We Deals In</h2>
+        <p>We specialise in providing top-quality industrial equipment and solutions to improve efficiency, safety, and
+          performance.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-tools icon"></i></div>
+              <h4>Deep Pneumatics</h4>
+              <p>Reliable supply and expert installation of industrial air compressors.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-wrench-adjustable icon"></i></div>
+              <h4>Quick Air </h4>
+              <p>Custom-designed pipeline systems for efficient air distribution.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-arrows-move icon"></i></div>
+              <h4>CarlStahl Craftman</h4>
+              <p>Durable hoisting and lifting systems tailored for industrial use.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-gear-wide-connected icon"></i></div>
+              <h4>Crane Craft India</h4>
+              <p>Comprehensive maintenance and support for long-term system performance.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+
         </div>
-  
-      </section><!-- /Services Section -->
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <section class="projects-area pb-0">
+      <div class="container">
+        <div class="section-title">
+          <h2>Products <span>We Offer</span></h2>
+        </div>
+        <div class="shorting fail" id="MixItUp7BCFB5">
+          <div class="row">
+            <div class="col-lg-4 col-sm-4">
+              <div class="projects bg-1">
+                <a href="atlas-copco-compressors" class="view-projects">Atlas Copco-Compressors</a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-8">
+              <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="projects bg-2">
+                    <a href="airnet-piping" class="view-projects">Airnet-Piping</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="projects bg-7">
+                    <a href="atlas-copco-power-tools" class="view-projects" style="font-size:16px;">Atlas Copco-Power
+                      Tools</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="projects bg-3">
+                    <a href="kito-hoist-crane-&amp;-light-rails" class="view-projects"
+                      style="font-size:16px;">Kito-Hoist, Crane &amp; Light Rails</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-lg-8 col-sm-6">
+                  <div class="projects bg-5">
+                    <a href="ashok-leyland-genset" class="view-projects">Ashok Leyland-Genset</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="projects bg-4">
+                    <a href="endo-light-rails" class="view-projects">Endo-Light Rails</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Work Process Section -->
     <section id="work-process" class="work-process section light-background">
@@ -312,7 +404,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Work Process</h2>
-        <p>At Eternity Solution Company, we follow a streamlined and client-focused process to ensure every project is executed with precision, professionalism, and purpose.</p>
+        <p>At Eternity Solution Company, we follow a streamlined and client-focused process to ensure every project is
+          executed with precision, professionalism, and purpose.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -327,7 +420,8 @@
               <div class="steps-content">
                 <div class="steps-number">01</div>
                 <h3>Consultation & Requirement Analysis</h3>
-                <p>We start by understanding your business, workspace, and operational needs. Our team conducts a detailed consultation to identify the right solution for your specific application.</p>
+                <p>We start by understanding your business, workspace, and operational needs. Our team conducts a
+                  detailed consultation to identify the right solution for your specific application.</p>
                 <div class="steps-features">
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
@@ -354,7 +448,8 @@
               <div class="steps-content">
                 <div class="steps-number">02</div>
                 <h3>Customized Solution Planning</h3>
-                <p>Once we understand your needs, we design a customised system—whether it’s an air compressor setup, pipeline design, or crane installation.  </p>
+                <p>Once we understand your needs, we design a customised system—whether it’s an air compressor setup,
+                  pipeline design, or crane installation. </p>
                 <div class="steps-features">
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
@@ -381,7 +476,8 @@
               <div class="steps-content">
                 <div class="steps-number">03</div>
                 <h3>Supply & Delivery</h3>
-                <p>We coordinate the supply of high-quality equipment from trusted manufacturers, ensuring timely delivery and proper handling.</p>
+                <p>We coordinate the supply of high-quality equipment from trusted manufacturers, ensuring timely
+                  delivery and proper handling.</p>
                 <div class="steps-features">
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
@@ -411,7 +507,8 @@
               <div class="steps-content">
                 <div class="steps-number">04</div>
                 <h3>Installation & Commissioning</h3>
-                <p>Our trained technicians install your system with care and precision, ensuring it functions flawlessly from day one.</p>
+                <p>Our trained technicians install your system with care and precision, ensuring it functions flawlessly
+                  from day one.</p>
                 <div class="steps-features">
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
@@ -438,7 +535,8 @@
               <div class="steps-content">
                 <div class="steps-number">05</div>
                 <h3>Training & Handover</h3>
-                <p>We don’t just install—we empower. We train your team to operate and maintain the system safely and efficiently.</p>
+                <p>We don’t just install—we empower. We train your team to operate and maintain the system safely and
+                  efficiently.</p>
                 <div class="steps-features">
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
@@ -465,7 +563,8 @@
               <div class="steps-content">
                 <div class="steps-number">06</div>
                 <h3>After-Sales Support & Maintenance</h3>
-                <p>We stand by our products and offer ongoing support and preventive maintenance packages to extend the life of your equipment.</p>
+                <p>We stand by our products and offer ongoing support and preventive maintenance packages to extend the
+                  life of your equipment.</p>
                 <div class="steps-features">
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
@@ -499,7 +598,9 @@
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
             <h3>Ready to Boost Your Industrial Efficiency?</h3>
-            <p>Partner with Eternity Solution Company for reliable air compressors, pipeline systems, and lifting solutions. Let our expertise drive your operations forward with efficiency and performance you can count on.</p>
+            <p>Partner with Eternity Solution Company for reliable air compressors, pipeline systems, and lifting
+              solutions. Let our expertise drive your operations forward with efficiency and performance you can count
+              on.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
             <a class="cta-btn align-middle" href="#contact">Get in Touch Now</a>
@@ -537,8 +638,10 @@
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-portrait-1.webp" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-portrait-1.webp" title="App 1"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -547,8 +650,11 @@
               <div class="portfolio-info">
                 <h4>Product 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-1.webp" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-1.webp" title="Product 1"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -557,8 +663,11 @@
               <div class="portfolio-info">
                 <h4>Branding 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-3.webp" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-3.webp" title="Branding 1"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -567,8 +676,10 @@
               <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-4.webp" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-4.webp" title="App 2" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -577,8 +688,11 @@
               <div class="portfolio-info">
                 <h4>Product 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-portrait-2.webp" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-portrait-2.webp" title="Product 2"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -587,8 +701,11 @@
               <div class="portfolio-info">
                 <h4>Branding 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-portrait-3.webp" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-portrait-3.webp" title="Branding 2"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -597,8 +714,10 @@
               <div class="portfolio-info">
                 <h4>App 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-7.webp" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-7.webp" title="App 3" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -607,8 +726,11 @@
               <div class="portfolio-info">
                 <h4>Product 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-8.webp" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-8.webp" title="Product 3"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -617,8 +739,11 @@
               <div class="portfolio-info">
                 <h4>Branding 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-9.webp" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-9.webp" title="Branding 2"
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -645,13 +770,14 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/gurpreet.jpeg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/people/gurpreet.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Mr. Gurpreet Singh</h4>
                 <span>Head of Technical products & Partner</span>
                 <p>Leads technical teams in installation, service, and after-sales support.</p>
                 <div class="social">
-                  <a href="https://www.facebook.com/profile.php?id=100021192174046"target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100021192174046" target="_blank"><i
+                      class="bi bi-facebook"></i></a>
                 </div>
               </div>
             </div>
@@ -659,30 +785,33 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/amandeep.jpeg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/people/amandeep.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Mr. Amandeep Singh</h4>
                 <span>Head of Sales & Partner</span>
                 <p>Leads sales operations with a focus on client satisfaction and business growth.</p>
                 <div class="social">
-                  <a href="https://www.facebook.com/profile.php?id=100005775249174" target="_blank"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.linkedin.com/in/amandeep-singh-805243168/?originalSubdomain=in" target="_blank"> <i class="bi bi-linkedin"></i> </a>
+                  <a href="https://www.facebook.com/profile.php?id=100005775249174" target="_blank"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/amandeep-singh-805243168/?originalSubdomain=in" target="_blank">
+                    <i class="bi bi-linkedin"></i> </a>
                 </div>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-         
+
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/amit.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/people/amit.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Mr. Amit Thakur</h4>
                 <span>Head of Operations & Partner</span>
                 <p>Oversees daily operations, ensuring smooth project execution and client service.</p>
                 <div class="social">
-                  <a href="https://www.facebook.com/profile.php?id=100015268003444" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100015268003444" target="_blank"><i
+                      class="bi bi-facebook"></i></a>
                 </div>
               </div>
             </div>
@@ -694,7 +823,7 @@
 
     </section><!-- /Team Section -->
 
-   
+
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
@@ -731,11 +860,13 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -747,11 +878,13 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -763,11 +896,13 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -779,11 +914,14 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                    velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                    veniam.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -795,11 +933,14 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
+                    culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
+                    quid.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -813,15 +954,16 @@
 
     </section><!-- /Testimonials Section -->
 
-   
+
     <!-- Contact Section -->
     <section id="contact" class="contact section ">
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Get in Touch</h2>
-      <p>Need assistance or looking for the right industrial solution? We’re just a message away — feel free to reach out!</p>
-    </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Get in Touch</h2>
+        <p>Need assistance or looking for the right industrial solution? We’re just a message away — feel free to reach
+          out!</p>
+      </div><!-- End Section Title -->
 
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -859,20 +1001,17 @@
               </div><!-- End Info Item -->
 
               <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3426.1234567890123!2d75.8578564!3d30.8970953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a831a1dd3f081%3A0x84f78b258a8d3151!2sB16%2C%20Third%20Floor%2C%20Shop%20no-1%2C%20Muradpur%2C%20Gill%20Rd%2C%20opposite%20Canara%20Bank%2C%20Ludhiana%2C%20Punjab%20141003!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
-              width="100%"
-              height="270"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3426.1234567890123!2d75.8578564!3d30.8970953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a831a1dd3f081%3A0x84f78b258a8d3151!2sB16%2C%20Third%20Floor%2C%20Shop%20no-1%2C%20Muradpur%2C%20Gill%20Rd%2C%20opposite%20Canara%20Bank%2C%20Ludhiana%2C%20Punjab%20141003!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+
             </div>
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -921,7 +1060,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <img src="assets/img/logo.png" alt=""> 
+            <img src="assets/img/logo.png" alt="">
           </a>
           <div class="footer-contact pt-3">
             <p>B16, Shop no-1, 2nd Floor, Muradpura </p>
@@ -932,9 +1071,9 @@
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Call Us:</h4>
-            <p>+91 98559 85798</p>
-            <p>+91 99155 70515</p>
-            <p>+91 99155 10515</p>
+          <p>+91 98559 85798</p>
+          <p>+91 99155 70515</p>
+          <p>+91 99155 10515</p>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
@@ -949,8 +1088,10 @@
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
           <div class="social-links d-flex">
-            <a href="https://www.facebook.com/people/Eternity-solution-company/61551788371268/" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/eternity-solution-company-92021328a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/people/Eternity-solution-company/61551788371268/" target="_blank"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/eternity-solution-company-92021328a/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -958,13 +1099,15 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Eternity Solution Company</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Eternity Solution Company</strong> <span>All Rights
+          Reserved</span></p>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

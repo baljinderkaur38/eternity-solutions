@@ -849,101 +849,89 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
-  padding: 80px 0;
+  padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 3;
-}
-
-.hero h2 {
+.hero h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
+  line-height: 56px;
 }
 
 .hero p {
-  margin: 10px 0 0 0;
-  font-size: 24px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 5px 0 30px 0;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
 }
 
-.hero .icon-box {
-  padding: 30px 20px;
-  transition: ease-in-out 0.3s;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero .icon-box i {
-  font-size: 32px;
-  line-height: 1;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.hero .icon-box h3 {
-  font-weight: 700;
-  margin: 10px 0 0 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.hero .icon-box h3 a {
-  transition: ease-in-out 0.3s;
+.hero .btn-get-started {
   color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
 }
 
-.hero .icon-box:hover {
-  border-color: var(--accent-color);
+.hero .btn-get-started:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-.hero .icon-box:hover h3 a {
+.hero .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: var(--default-color);
+  font-weight: 600;
+}
+
+.hero .btn-watch-video i {
+  color: var(--contrast-color);
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+.hero .btn-watch-video:hover {
   color: var(--accent-color);
 }
-.hero .icon-box i:hover {
-  color: var(--accent-color);
+
+.hero .btn-watch-video:hover i {
+  color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
-.text-align-center{
-  text-align:center;
+
+.hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .hero p {
     font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .hero .btn-get-started,
+  .hero .btn-watch-video {
+    font-size: 13px;
   }
 }
 
@@ -3588,9 +3576,230 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+
+/* custom code */
 .mb-25{
   margin-bottom: 25px;
 }
-.blue-text{
-  color:#8cbdff;
+
+.hero-section {
+  position: relative;
+  background: url('../img/hero-bg1.jpg') center center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(61, 77, 106, 0.5); /* Blue with low opacity */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color:#fff;
+}
+
+.company-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #6ca1ea;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.icon-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(4px);
+  height: 100%;
+}
+
+.icon-box:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.icon-box a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon-box a:hover {
+  color: #7fb5ff;
+}
+.logo-box {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 20px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo-box:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.logo-img {
+  max-height: 60px;
+  max-width: 100%;
+  filter: brightness(1.1) contrast(1.2);
+  transition: transform 0.3s ease;
+}
+
+.logo-box:hover .logo-img {
+  transform: scale(1.05);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 2rem;
+  }
+
+  .welcome-text {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}
+
+
+.bg-1 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-1.jpg'); background-size: cover; background-position: center; }
+.bg-2 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-2.jpg'); background-size: cover; background-position: center; }
+.bg-3 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-3.jpg'); background-size: cover; background-position: center; }
+.bg-4 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-4.jpg'); background-size: cover; background-position: center; }
+.bg-5 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-5.jpg'); background-size: cover; background-position: center; }
+.bg-7 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-7.jpg'); background-size: cover; background-position: center; }
+
+.projects {
+  position: relative;
+  height: 100%;
+  min-height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projects:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* Background images */
+.projects.bg-1,
+.projects.bg-2,
+.projects.bg-3,
+.projects.bg-4,
+.projects.bg-5,
+.projects.bg-7 {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+/* Custom blue overlay on hover with opacity */
+.projects::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(61, 77, 106, 0); /* transparent initially */
+  transition: background 0.3s ease;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.projects:hover::before {
+  background: rgba(61, 77, 106, 0.8); /* blue with 40% opacity */
+}
+
+/* Centered product name */
+.projects > a.view-projects {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white !important;
+  font-weight: 700;
+  font-size: 18px !important;
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+  width: 90%;
+  padding: 0 10px;
+  white-space: normal;
+}
+
+.projects:hover > a.view-projects {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.carousel-img {
+  height: 320px; /* Adjust height as needed */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px; /* optional rounded corners */
 }
