@@ -1,45 +1,42 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+require_once '../assets/vendor/php-email-form/php-email-form.php';
 
-  // Replace contact@example.com with your real receiving email address
+// Where the message will be received
 
-  $receiving_email_address = 'baljinderkau1374@gmail.com';
+$contact = new PHP_Email_Form;
+$contact->ajax = true;
+$contact->to = [
+  'eternitysolutioncompany@gmail.com',
+  'baljinderkaur1374@gmail.com',
+];
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+// User's input from the form
+$name    = $_POST['name'] ?? '';
+$email   = $_POST['email'] ?? '';
+$phone   = $_POST['phone'] ?? '';
+$subject = $_POST['subject'] ?? '';
+$message = $_POST['message'] ?? '';
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+$contact->from_name = $name;
+$contact->from_email = $email;
+$contact->subject = "New Contact Form Submission";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+// Format the email message as an HTML template
+$formatted_message = "
+You have received a new contact form submission:
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  if(isset($_POST['phone'])) {
-    $contact->add_message( $_POST['phone'], 'Phone');
-  }
-  $contact->add_message( $_POST['message'], 'Message', 10);
+------------------------------------------------------------
+🧑 Name: $name
+📧 Email: $email
+📌 Subject: $subject
+📞 Phone: $phone
+💬 Message:
+$message
+------------------------------------------------------------
+";
 
-  echo $contact->send();
-?>
+// Add to the PHPMailer body
+$contact->add_message($formatted_message, '', 0);
+
+// Send
+echo $contact->send();
