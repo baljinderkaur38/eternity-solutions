@@ -3,8 +3,52 @@
 
   let forms = document.querySelectorAll('.php-email-form');
 
-  forms.forEach(function (e) {
-    e.addEventListener('submit', function (event) {
+  const fields = [
+    { id: 'name-field', error: 'name-error' },
+    { id: 'email-field', error: 'email-error' },
+    { id: 'phone-field', error: 'phone-error' },
+    { id: 'subject-field', error: 'subject-error' },
+    { id: 'message-field', error: 'message-error' }
+  ];
+
+  forms.forEach(function (form) {
+
+    // Real-time validation on input and blur
+    fields.forEach(field => {
+      const input = form.querySelector(`#${field.id}`);
+      const errorSpan = form.querySelector(`#${field.error}`);
+
+      const validate = () => {
+        if (!input.checkValidity()) {
+          errorSpan.textContent = input.title || 'Invalid input';
+        } else {
+          errorSpan.textContent = '';
+        }
+      };
+
+      input.addEventListener('input', validate);
+      input.addEventListener('blur', validate);
+    });
+
+    // Validate and show messages on submit button click
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        fields.forEach(field => {
+          const input = form.querySelector(`#${field.id}`);
+          const errorSpan = form.querySelector(`#${field.error}`);
+
+          if (!input.checkValidity()) {
+            errorSpan.textContent = input.title || 'Invalid input';
+          } else {
+            errorSpan.textContent = '';
+          }
+        });
+      });
+    }
+
+    // Form submit handler with validation and AJAX submission
+    form.addEventListener('submit', function (event) {
       event.preventDefault();
 
       let thisForm = this;
@@ -15,14 +59,6 @@
       thisForm.querySelectorAll('.error-message').forEach(el => el.textContent = '');
 
       let isValid = true;
-
-      const fields = [
-        { id: 'name-field', error: 'name-error' },
-        { id: 'email-field', error: 'email-error' },
-        { id: 'phone-field', error: 'phone-error' },
-        { id: 'subject-field', error: 'subject-error' },
-        { id: 'message-field', error: 'message-error' }
-      ];
 
       fields.forEach(field => {
         const input = thisForm.querySelector(`#${field.id}`);
