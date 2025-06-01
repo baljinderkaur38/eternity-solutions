@@ -1505,6 +1505,7 @@ section,
 .portfolio .portfolio-item .portfolio-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
+  font-weight:bold;
   margin-bottom: 0;
   padding-right: 50px;
 }
@@ -3794,4 +3795,18 @@ section,
   object-fit: cover;
   object-position: center;
   border-radius: 12px; /* optional rounded corners */
+}
+.carousel-about-wrapper {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.carousel-about-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }

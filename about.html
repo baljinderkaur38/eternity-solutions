@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,7 +47,6 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -68,42 +69,108 @@
         <h1>About Us</h1>
       </div>
     </div><!-- End Page Title -->
+    <!-- ABOUT Section -->
+    <section id="about" class="about section pt-0">
 
-    <!-- Starter Section Section -->
-    <section id="about" class="about section">
+      <!-- Fixed-Height Carousel -->
+      <div class="container-fluid px-0">
+        <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
 
-      <!-- About Section -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-      </div><!-- End Section Title -->
+            <div class="carousel-item active">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-0.jpg" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
 
-      <div class="container">
+            <div class="carousel-item">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-1.jpg" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
 
-        <div class="row gy-4">
+            <div class="carousel-item">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-2.JPG" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>Established in Ludhiana, Punjab, Eternity Solution Company has emerged as a dependable distributor and service provider in the industrial equipment space. We specialize in supplying a wide range of air compressors, pneumatic tools, air dryers, hoists, cranes, and associated accessories. Our brand partners include renowned manufacturers known for high-performance and energy-efficient technologies.</p>
+            <div class="carousel-item">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-3.JPG" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
 
-            <p>Our solutions are trusted by manufacturing units, workshops, pharmaceutical companies, and various industrial facilities across India. We not only supply machinery but also help organizations implement cost-effective and productivity-enhancing systems.</p> 
-            
+            <div class="carousel-item">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-4.jpg" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-5.jpg" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-6.jpg" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-7.jpg" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-about-wrapper">
+                <img src="assets/img/people/about-8.JPG" class="d-block w-100" alt="About Us">
+              </div>
+            </div>
+
           </div>
-  
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Our goal is simple: to deliver reliable and efficient systems that meet the demands of modern industrial environments. Whether you need a compact compressor, a complex air piping layout, or a heavy-duty hoisting and lifting solution, Eternity Solution Company has the expertise and products to get the job done right.</p>
- 
-            <p>Backed by years of industry experience and a customer-first approach, Eternity Solution Company is your reliable partner in industrial automation and lifting solutions. We don’t just deliver products — we deliver peace of mind.</p>
-           
-          </div>
 
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-
       </div>
 
-    </section><!-- /About Section -->
+      <!-- About Content -->
+      <div class="container py-5">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <p>Established in Ludhiana, Punjab, Eternity Solution Company has emerged as a dependable distributor and
+              service provider in the industrial equipment space. We specialize in supplying a wide range of air
+              compressors, pneumatic tools, air dryers, hoists, cranes, and associated accessories. Our brand partners
+              include renowned manufacturers known for high-performance and energy-efficient technologies.</p>
+            <p>Our solutions are trusted by manufacturing units, workshops, pharmaceutical companies, and various
+              industrial facilities across India. We not only supply machinery but also help organizations implement
+              cost-effective and productivity-enhancing systems.</p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>Our goal is simple: to deliver reliable and efficient systems that meet the demands of modern industrial
+              environments. Whether you need a compact compressor, a complex air piping layout, or a heavy-duty hoisting
+              and lifting solution, Eternity Solution Company has the expertise and products to get the job done right.
+            </p>
+            <p>Backed by years of industry experience and a customer-first approach, Eternity Solution Company is your
+              reliable partner in industrial automation and lifting solutions. We don’t just deliver products — we
+              deliver peace of mind.</p>
+          </div>
+        </div>
+      </div>
 
+    </section>
+
+    <!-- /About Section -->
   </main>
-
- 
   <footer id="footer" class="footer">
 
     <div class="container footer-top">
@@ -130,10 +197,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Partners</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Deep Pneumatics</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Quick Air</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Carl Stahl Craftman</a></li>
-             <li><i class="bi bi-chevron-right"></i> <a href="#">Crane Craft India</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="deep-pneumatics.html">Deep Pneumatics</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="quickair.html">Quick Air</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="carl-stahl-craftman.html">Carl Stahl Craftman</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="crane-craft-india.html">Crane Craft India</a></li>
           </ul>
         </div>
 
@@ -158,7 +225,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

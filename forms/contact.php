@@ -8,6 +8,7 @@ $contact->ajax = true;
 $contact->to = [
   'eternitysolutioncompany@gmail.com',
   'baljinderkaur1374@gmail.com',
+  'info@eternitysolution.in'
 ];
 
 // User's input from the form
