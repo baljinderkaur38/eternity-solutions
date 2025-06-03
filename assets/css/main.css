@@ -140,7 +140,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 8px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -150,8 +150,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 100px;
-  margin-right: 8px;
+  max-height: 80px;
+  margin-right: 0px;
 }
 
 .header .logo h1 {
@@ -3809,4 +3809,8 @@ section,
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
+}
+
+.py-0{
+  padding:0px !important;
 }
