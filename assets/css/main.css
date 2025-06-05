@@ -140,7 +140,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 8px 0;
+  padding: 13px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -3708,13 +3708,6 @@ section,
 }
 
 
-.bg-1 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-1.jpg'); background-size: cover; background-position: center; }
-.bg-2 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-2.jpg'); background-size: cover; background-position: center; }
-.bg-3 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-3.jpg'); background-size: cover; background-position: center; }
-.bg-4 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-4.jpg'); background-size: cover; background-position: center; }
-.bg-5 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-5.jpg'); background-size: cover; background-position: center; }
-.bg-7 { background-image: url('https://www.industrialequipmentcompany.co.in/assets/img/projects-img/projects-img-7.jpg'); background-size: cover; background-position: center; }
-
 .projects {
   position: relative;
   height: 100%;
@@ -3813,4 +3806,19 @@ section,
 
 .py-0{
   padding:0px !important;
+}
+.product-grid{
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: var(--heading-color);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    background-image: url(../img/products/deep/background.png);
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: var(--heading-color) !important;
+}
+.about-title{
+  border-bottom: 2px solid var(--heading-color);
 }
