@@ -3755,7 +3755,9 @@ section,
 .projects:hover::before {
   background: rgba(61, 77, 106, 0.8); /* blue with 40% opacity */
 }
-
+.main{
+  padding-top:100px;
+}
 /* Centered product name */
 .projects > a.view-projects {
   position: absolute;
@@ -3821,4 +3823,9 @@ section,
 }
 .about-title{
   border-bottom: 2px solid var(--heading-color);
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+  font-weight: bold !important;
+  font-size: 20px !important;
+  color: var(--heading-color) !important;
 }
