@@ -49,44 +49,133 @@
     </div>
   </header>
 
-  <main class="main">
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Our Partners</li>
-            <li class="current">Quick Air</li>
-          </ol>
-        </nav>
-        <h1>Quick Air</h1>
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title" data-aos="fade">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Our Partners</li>
+          <li class="current">Quick Air</li>
+        </ol>
+      </nav>
+      <h1>Quick Air</h1>
+    </div>
+  </div>
+
+  <!-- Hero Banner Image -->
+  <section class="py-0">
+    <div class="container-fluid px-0">
+      <img src="assets/img/products/quick/banner.PNG" alt="Quick Air Banner" class="img-fluid w-100"
+        style="max-height: 550px; object-fit: cover;">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-4">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="about-title">About Quick Air</h2>
+        <p>Quick Air, a part of the renowned Canara Hydraulics group, is a leading manufacturer of air compressors and
+          pneumatic equipment in India. Known for delivering precision-engineered, energy-efficient compressed air
+          solutions, Quick Air combines decades of experience with modern technology. Their robust product range
+          includes lubricated and oil-free compressors, screw and piston compressors, and custom pneumatic systems
+          designed to meet industrial demands across various sectors.</p>
       </div>
     </div>
-    <!-- Hero Banner Image -->
-    <section class="py-0">
-      <div class="container-fluid px-0">
-        <img src="assets/img/products/quick/banner.PNG" alt="Quick Air Banner" class="img-fluid w-100"
-          style="max-height: 550px; object-fit: cover;">
+  </section>
+
+  <!-- Product Listing -->
+  <section class="py-4">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Our Range of Quick Air Products</h2>
       </div>
-    </section>
-    <section class="py-4">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="about-title">About Quick Air</h2>
-          <p>Quick Air, a part of the renowned Canara Hydraulics group, is a leading manufacturer of air compressors and pneumatic equipment in India. Known for delivering precision-engineered, energy-efficient compressed air solutions, Quick Air combines decades of experience with modern technology. Their robust product range includes lubricated and oil-free compressors, screw and piston compressors, and custom pneumatic systems designed to meet industrial demands across various sectors.</p>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" data-category="modular">Modular Aluminium Piping Systems</a>
+            <a href="#" class="list-group-item list-group-item-action" data-category="pushfit">Push Fit Piping System</a>
+            <a href="#" class="list-group-item list-group-item-action" data-category="valves">Valves & Accessories</a>
+            <a href="#" class="list-group-item list-group-item-action" data-category="steel">Stainless Steel Modular Piping</a>
+            <a href="#" class="list-group-item list-group-item-action" data-category="pex">Pex Piping System</a>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div id="productGrid" class="row">
+            <!-- Product Cards Here -->
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <section class="py-4">
-      <div class="container">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Our Range of Quick Air Products</h2>
-        </div><!-- End Section Title -->
-    </section>
-  </main>
+<script>
+  const productData = {
+    modular: [
+      { name: "Male Connector", img: "assets/img/products/quick/01.png" },
+      { name: "Angel Elbow", img: "assets/img/products/quick/01.png" },
+      { name: "Droplet", img: "assets/img/products/quick/01.png" },
+      { name: "Droplet Female", img: "assets/img/products/quick/01.png" },
+      { name: "Endcap", img: "assets/img/products/quick/01.png" },
+      { name: "Equal Tree", img: "assets/img/products/quick/01.png" },
+      { name: "Female Thread", img: "assets/img/products/quick/01.png" },
+      { name: "Quick Drop", img: "assets/img/products/quick/01.png" },
+      { name: "Reducer", img: "assets/img/products/quick/01.png" }
+    ],
+    pushfit: [
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" },
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" },
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" }
+    ],
+    valves: [
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" },
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" },
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" }
+    ],
+    steel: [
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" },
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" },
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" }
+    ],
+    pex: [
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" },
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" },
+      { name: "Sample Product", img: "assets/img/products/quick/01.png" }
+    ]
+  };
+
+  function renderProducts(category) {
+    const grid = document.getElementById('productGrid');
+    grid.innerHTML = '';
+    productData[category].forEach(prod => {
+      const col = document.createElement('div');
+      col.className = 'col-md-4 mb-4';
+      col.innerHTML = `
+        <div class="card h-100 border-0 shadow">
+          <img src="${prod.img}" class="card-img-top" alt="${prod.name}">
+          <div class="card-body">
+            <h5 class="card-title">${prod.name}</h5>
+          </div>
+        </div>`;
+      grid.appendChild(col);
+    });
+  }
+
+  document.querySelectorAll('[data-category]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelectorAll('[data-category]').forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+      renderProducts(this.dataset.category);
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => renderProducts('modular'));
+</script>
 
 
   <footer id="footer" class="footer">

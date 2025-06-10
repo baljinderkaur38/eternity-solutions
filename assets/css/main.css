@@ -4,30 +4,43 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Jost",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Jost", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37517e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #47b2e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-  --footer-color: #f8f8f8; /* Background color for the footer */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #37517e;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #47b2e4;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --footer-color: #f8f8f8;
+  /* Background color for the footer */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #47b2e4; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #47b2e4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #47b2e4;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #47b2e4;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -1505,7 +1518,7 @@ section,
 .portfolio .portfolio-item .portfolio-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
-  font-weight:bold;
+  font-weight: bold;
   margin-bottom: 0;
   padding-right: 50px;
 }
@@ -3572,7 +3585,7 @@ section,
 
 
 /* custom code */
-.mb-25{
+.mb-25 {
   margin-bottom: 25px;
 }
 
@@ -3594,7 +3607,8 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(61, 77, 106, 0.5); /* Blue with low opacity */
+  background-color: rgba(61, 77, 106, 0.5);
+  /* Blue with low opacity */
   z-index: 1;
 }
 
@@ -3608,7 +3622,7 @@ section,
 .welcome-text {
   font-size: 2rem;
   font-weight: 600;
-  color:#fff;
+  color: #fff;
 }
 
 .company-name {
@@ -3659,23 +3673,24 @@ section,
 .icon-box a:hover {
   color: #7fb5ff;
 }
+
 .logo-box {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.8);
   border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 12px;
-  padding: 20px;
+  padding: 10px;
   height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out;
   backdrop-filter: blur(6px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .logo-box:hover {
   background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
+  transform: scale(1.08);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
@@ -3746,20 +3761,24 @@ section,
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(61, 77, 106, 0); /* transparent initially */
+  background: rgba(61, 77, 106, 0);
+  /* transparent initially */
   transition: background 0.3s ease;
   border-radius: 10px;
   z-index: 1;
 }
 
 .projects:hover::before {
-  background: rgba(61, 77, 106, 0.8); /* blue with 40% opacity */
+  background: rgba(61, 77, 106, 0.8);
+  /* blue with 40% opacity */
 }
-.main{
-  padding-top:100px;
+
+.main {
+  padding-top: 100px;
 }
+
 /* Centered product name */
-.projects > a.view-projects {
+.projects>a.view-projects {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3778,7 +3797,7 @@ section,
   white-space: normal;
 }
 
-.projects:hover > a.view-projects {
+.projects:hover>a.view-projects {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   pointer-events: auto;
@@ -3786,11 +3805,14 @@ section,
 
 
 .carousel-img {
-  height: 320px; /* Adjust height as needed */
+  height: 320px;
+  /* Adjust height as needed */
   object-fit: cover;
   object-position: center;
-  border-radius: 12px; /* optional rounded corners */
+  border-radius: 12px;
+  /* optional rounded corners */
 }
+
 .carousel-about-wrapper {
   height: 500px;
   overflow: hidden;
@@ -3806,29 +3828,50 @@ section,
   object-fit: contain;
 }
 
-.py-0{
-  padding:0px !important;
+.py-0 {
+  padding: 0px !important;
 }
-.product-grid{
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: var(--heading-color);
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    background-image: url(../img/products/deep/background.png);
+
+.product-grid {
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: var(--heading-color);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  background-image: url(../img/products/deep/background.png);
 }
 
 .bg-primary {
-    --bs-bg-opacity: 1;
-    background-color: var(--heading-color) !important;
+  --bs-bg-opacity: 1;
+  background-color: var(--heading-color) !important;
 }
-.about-title{
+
+.about-title {
   border-bottom: 2px solid var(--heading-color);
 }
-.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
   font-weight: bold !important;
   font-size: 20px !important;
   color: var(--heading-color) !important;
 }
-.list-unstyled li{
-  line-height:27px;
+
+.list-unstyled li {
+  line-height: 27px;
+}
+
+#productTabs.nav-tabs .nav-link {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#productTabs.nav-tabs .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.hero-client{
+  max-height:100% !important;
+  min-height:100% !important;
 }
