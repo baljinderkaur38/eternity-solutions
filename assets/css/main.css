@@ -3591,7 +3591,7 @@ section,
 
 .hero-section {
   position: relative;
-  background: url('../img/hero-bg1.jpg') center center/cover no-repeat;
+  background: url('../img/hero-bg.jpg') center center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -3607,7 +3607,7 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(61, 77, 106, 0.5);
+  background-color: rgba(61, 77, 106, 0.3);
   /* Blue with low opacity */
   z-index: 1;
 }
@@ -3628,7 +3628,6 @@ section,
 .company-name {
   font-size: 3rem;
   font-weight: 700;
-  color: #6ca1ea;
   margin-bottom: 1rem;
 }
 

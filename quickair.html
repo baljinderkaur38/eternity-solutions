@@ -41,7 +41,7 @@
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="partners.html">Our Partners</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -98,11 +98,11 @@
             <div class="sidebar-widget-area">
             <div class="widget widget-catageory mb-40">
             <h4 class="widget-title">Catageory</h4>
-                <ul class="categeory-link">
-                    <li><a href="#"  class="active" data-category="catalogs">Catalogs</a></li>
-                    <li><a href="#" data-category="modular">Modular Aluminium Piping Systems</a></li>
+                <ul class="categeory-link">                 
+                    <li><a href="#" class="active" data-category="modular">Modular Aluminium Piping Systems</a></li>
                     <li><a href="#" data-category="pushfit">Push Fit Piping System</a></li>
                     <li><a href="#"  data-category="valves">Valves &amp; Accessories</a></li>
+                    <li><a href="#"   data-category="catalogs">Catalogs</a></li>
                 </ul>
             </div>
         </div>
@@ -202,7 +202,7 @@ function renderProducts(category) {
       });
     });
 
-    document.addEventListener('DOMContentLoaded', () => renderProducts('catalogs'));
+    document.addEventListener('DOMContentLoaded', () => renderProducts('modular'));
   </script>
 
 
