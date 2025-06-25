@@ -3811,7 +3811,9 @@ section,
   border-radius: 12px;
   /* optional rounded corners */
 }
-
+.craftmanCarousel .carousel-img{
+  height: 100%;
+}
 .carousel-about-wrapper {
   height: 500px;
   overflow: hidden;
@@ -3977,4 +3979,55 @@ section,
     height: 100%;
     border: none;
     display: block;
+}
+.craftman-img{
+  width: 400px;
+  height: 400px;
+}
+.hh3{
+  float:left;
+  color:var(--heading-color);
+  padding-bottom: 40px;
+}
+.hh3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: var(--accent-color);
+    margin-top: 7px;
+}
+.spectable {
+    overflow: hidden;
+}
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+.spectable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.spectable tr td:first-child {
+    background: #fafafb;
+    font-weight: 700;
+}
+.spectable td {
+    padding: 15px;
+    border: 1px solid #a8a7a761;
+}
+.paraline{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    overflow-x: hidden;
+    font-weight: 400;
+    padding-top: 40px;
+}
+.craft-grid{
+  padding: 40px 0px;
+}
+.craft-grid .row {
+  border-top: 1px solid #cccccc;
 }
