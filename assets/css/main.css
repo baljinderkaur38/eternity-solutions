@@ -3980,23 +3980,38 @@ section,
     border: none;
     display: block;
 }
-.craftman-img{
-  width: 400px;
-  height: 400px;
-}
+
+
 .hh3{
-  float:left;
-  color:var(--heading-color);
-  padding-bottom: 40px;
+    float: left;
+    color: var(--heading-color);
+    padding-bottom: 10px;
+    margin-bottom:30px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--heading-color);
 }
 .hh3::after {
     content: "";
     position: absolute;
     display: block;
-    width: 60px;
-    height: 5px;
+    width: 70px;
+    height: 4px;
     background: var(--accent-color);
-    margin-top: 7px;
+    margin-top: 8px;
+}
+.hh5{
+  float:left;
+  color:var(--heading-color);
+  padding-bottom: 15px;
+}
+.hh5::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: var(--accent-color);
+    margin-top: 5px;
 }
 .spectable {
     overflow: hidden;
@@ -4014,7 +4029,7 @@ section,
     font-weight: 700;
 }
 .spectable td {
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #a8a7a761;
 }
 .paraline{
@@ -4023,11 +4038,21 @@ section,
     line-height: 25px;
     overflow-x: hidden;
     font-weight: 400;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 .craft-grid{
-  padding: 40px 0px;
+  padding: 0px 0px 40px 0px;
+  
 }
-.craft-grid .row {
-  border-top: 1px solid #cccccc;
+.craft-grid .row{
+   padding: 10px 0px;
+}
+.craft-row {
+ border-bottom: 1px solid #cccccc;
+ padding-bottom:20px;
+ 
+}
+.craft-row ul{
+    padding: 0px 30px;
+    line-height: 25px;
 }
