@@ -222,5 +222,26 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+  $(document).ready(function(){
+    $('.craftmanCarousel').owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      navText: ["<", ">"],
+      autoplay: true,
+      smartSpeed: 600,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+          loop: false // disable loop for single item view
+        }
+      }
+    });
+  });
+
 
 
