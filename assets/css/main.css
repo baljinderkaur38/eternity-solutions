@@ -3607,7 +3607,7 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(61, 77, 106, 0.3);
+  background-color: rgba(61, 77, 106, 0.4);
   /* Blue with low opacity */
   z-index: 1;
 }
