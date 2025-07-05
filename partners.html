@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/logo.jpg" rel="icon">
-  <link href="assets/img/logo.jpg" rel="apple-touch-icon">
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -25,6 +25,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="assets/vendor/owl-carousel/owl.theme.css">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -43,7 +45,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="partners.html"  class="active">Our Partners</a></li>
+          <li><a href="partners.html" class="active">Our Partners</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -63,36 +65,145 @@
         <h1>Our Partners</h1>
       </div>
     </div>
-       <!-- Hero Section -->
-    <section id="hero" class="hero-section partners">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content text-center" data-aos="fade-up" data-aos-delay="100">
-        <h1 class="company-name">Our Partners</h1>
+    <!-- Hero Banner Image -->
+    <section class="py-0">
+      <div class="container-fluid px-0">
+        <img src="assets/img/partners_banner.png" alt="PARTNERS" class="img-fluid w-100 banner-img">
+      </div>
+    </section>
+    <!-- /Hero Section -->
+    <!-- Enhanced Partner Descriptions Section -->
+    <section id="partner-descriptions" class="py-5 partner-section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center mb-5">
+          <h2 class="fw-bold">Meet Our Trusted Partners</h2>
+          <p class="text-muted">We collaborate with industry leaders to deliver top-tier solutions.</p>
+        </div>
 
-        <div class="row gy-4 mt-2 justify-content-center">
-          <div class="col-xl-2 col-md-3 col-6">
-            <div class="logo-box text-center">
-              <a href="deep-pneumatics.html"><img src="assets/img/clients/DeepPneumatics.png" alt="Deep Pneumatics" class="logo-img hero-client"></a>
+        <!-- Partner Card: Deep Pneumatics -->
+        <div class="card mb-5 shadow border-0 p-4" data-aos="fade-up">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-3 text-center">
+              <img src="assets/img/clients/DeepPneumatics.png" alt="Deep Pneumatics" class="img-fluid partner-logo">
+
             </div>
-          </div>
-          <div class="col-xl-2 col-md-3 col-6">
-            <div class="logo-box text-center">
-              <a href="quickair.html"><img src="assets/img/clients/QuickAir.png" alt="Quick Air" class="logo-img hero-client"></a>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-3 col-6">
-            <div class="logo-box text-center">
-              <a href="carl-stahl-craftman.html"><img src="assets/img/clients/CarlstahlCraftman.png" alt="Carlstahl Craftman"
-                  class="logo-img hero-client"></a>
+            <div class="col-lg-9">
+              <h3 class="hh3">Deep Pneumatics</h3>
+              <p>Deep Pneumatics is a leading manufacturer of high-quality compressed air systems and accessories in
+                India. With a commitment to innovation, performance, and energy efficiency, Deep Pneumatics provides
+                advanced solutions that meet the evolving demands of industrial applications. From oil-free screw
+                compressors to precision-engineered air dryers and accessories, their product range ensures reliability,
+                productivity, and sustainable performance across industries.</p>
+              <div class="owl-carousel owl-theme partnersCarousel" id="DeepCarousel">
+                <div class="item"><img src="assets/img/products/deep/air-dryer.png" 
+                    alt="Air Dryer"></div>
+                <div class="item"><img src="assets/img/products/deep/ipm-series.png" 
+                    alt="IPM Series"></div>
+                <div class="item"><img src="assets/img/products/deep/reciprocating.png" 
+                    alt="Reciprocating Compressor"></div>
+                <div class="item"><img src="assets/img/products/deep/vibrant-series.png"
+                     alt="Vibrant Series"></div>
+                <div class="item"><img src="assets/img/products/deep/oil-free-screw.png"
+                     alt="Oil-Free Screw Compressor"></div>
+                <div class="item"><img src="assets/img/products/deep/pas-gas.png" 
+                    alt="PAS Gas System"></div>
+                <div class="item"><img src="assets/img/products/deep/2stage.png" 
+                    alt="2 Stage Compressor"></div>
+
+              </div>
+              <a href="deep-pneumatics.html" class="view-btn">
+               View More
+               <i class="bi bi-arrow-right"></i>
+              </a>
+
             </div>
           </div>
         </div>
 
+        <!-- Partner Card: Quick Air -->
+        <div class="card mb-5 shadow border-0 p-4" data-aos="fade-up">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-3 text-center">
+              <img src="assets/img/clients/Quickair.png" alt="Quick Air" class="img-fluid partner-logo">
 
+            </div>
+            <div class="col-lg-9">
+              <h3 class="hh3">Quick Air</h3>
+              <p>Quick Air, a part of the renowned Canara Hydraulics group, is a leading manufacturer of air compressors
+                and pneumatic equipment in India. Known for delivering precision-engineered, energy-efficient compressed
+                air solutions, Quick Air combines decades of experience with modern technology. Their robust product
+                range includes lubricated and oil-free compressors, screw and piston compressors, and custom pneumatic
+                systems designed to meet industrial demands across various sectors.</p>
+              <div class="owl-carousel owl-theme partnersCarousel" id="QuickCarousel">
+                <div class="item"><img src="assets/img/products/quick/femalethread.png"
+                    ></div>
+                <div class="item"><img src="assets/img/products/quick/reducer.jpg" >
+                </div>
+                <div class="item"><img src="assets/img/products/quick/droplet.png" >
+                </div>
+                <div class="item"><img src="assets/img/products/quick/dropletfemale.png"
+                    ></div>
+                <div class="item"><img src="assets/img/products/quick/maleconnector.png"
+                    ></div>
+                <div class="item"><img src="assets/img/products/quick/pipetopipe.jpg" >
+                </div>
+                <div class="item"><img src="assets/img/products/quick/quickdrop.png" >
+                </div>
+
+              </div>
+              <a href="quickair.html" class="view-btn">
+               View More
+               <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Partner Card: Carl Stahl Craftman -->
+        <div class="card mb-5 shadow border-0 p-4" data-aos="fade-up">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-3 text-center">
+              <img src="assets/img/clients/CarlstahlCraftman.png" alt="Carl stahl Craftman"
+                class="img-fluid partner-logo">
+
+            </div>
+            <div class="col-lg-9">
+              <h3 class="hh3">Carl Stahl Craftsman</h3>
+              <p>Carl Stahl Craftsman Enterprises Private Limited, established in 2007 as a joint venture between Carl
+                Stahl GmbH, Germany and Craftsman Automation Limited, India, emphasizes affordability and quality. They
+                offer lifting solutions that enhance component handling and assembly processes, resulting in increased
+                production. Designed and manufactured in India to European standards, their systems feature streamlined
+                operations and ergonomic design, ensuring a smooth and effortless lifting experience. With a focus on
+                safety and efficiency, their products create a seamless and secure work environment, empowering
+                businesses to grow more efficiently.</p>
+              <div class="owl-carousel owl-theme partnersCarousel" id="CarlCarousel">
+                <div class="item"><img src="assets/img/products/craftman/Underslung-straight/1.webp"
+                    ></div>
+                <div class="item"><img src="assets/img/products/craftman/dual-crib/1.webp"
+                    ></div>
+                <div class="item"><img src="assets/img/products/craftman/twin-hook/1.webp"
+                    ></div>
+                <div class="item"><img src="assets/img/products/craftman/double-grider/1.webp"
+                    ></div>
+                <div class="item"><img src="assets/img/products/craftman/fixed/1.webp" >
+                </div>
+                <div class="item"><img src="assets/img/products/craftman/underslung-articulated/1.webp"
+                    ></div>
+                <div class="item"><img src="assets/img/products/craftman/single-grider/1.webp"
+                    ></div>
+              </div>
+              <a href="carl-stahl-craftman.html" class="view-btn">
+               View More
+               <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- /Hero Section -->
   </main>
   <footer id="footer" class="footer">
     <div class="container footer-top">
@@ -154,6 +265,8 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>

@@ -241,6 +241,28 @@
         }
       }
     });
+ $('.partnersCarousel').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: true,
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  responsive: {
+    0: { items: 1 },
+    576: { items: 2 },
+    768: { items: 2 },
+    992: { items: 3 },
+    1200: { items: 4 },
+    1400: { items: 4 },
+    1600: { items: 4 },
+    1920: { items: 4 }
+  },
+  navText: [
+    '<i class="bi bi-chevron-left"></i>',
+    '<i class="bi bi-chevron-right"></i>'
+  ]
+});
   });
 
 

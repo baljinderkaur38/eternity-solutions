@@ -3611,21 +3611,7 @@ section,
   /* Blue with low opacity */
   z-index: 1;
 }
-.hero-section.partners {
-  background: url('../img/hero-bg-1.jpg') center center/cover no-repeat;
-   height: 65vh;
-}
 
-.hero-section.partners .hero-overlay {
-  background-color: rgba(61, 77, 106, 0.8);
-}
-.hero-section.partners .company-name {
- color:#fff;
-}
-.hero-section.partners .logo-box {
-    padding: 13px;
-    height: 110px;
-}
 .hero-content {
   position: relative;
   z-index: 2;
@@ -4135,4 +4121,51 @@ ol {
 .breadcrumbs .current a{
   color:var(--heading-color);
   font-weight:700;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.section-title h2 {
+  font-size: 2rem;
+}
+
+.section-title p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1rem;
+}
+.banner-img{
+max-height:400px;
+object-fit: cover;
+}
+.partnersCarousel .item{
+  margin:10px 0px 10px 10px;
+}
+.partnersCarousel img{
+  max-width:100% !important;
+  height: 180px;
+  object-fit: cover;
+}
+.partner-section .hh3{
+  float:none !important;
+  font-size: 1.75rem; 
+  margin-top: 0;
+}
+.partner-logo{
+  max-height:90px;
+}
+.partner-section .section-title{
+  padding-bottom:0px;
+}
+.view-btn{
+  font-size:18px;
+  color: var(--heading-color);
 }
