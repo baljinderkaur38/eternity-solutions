@@ -41,9 +41,9 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="partners.html">Our Partners</a></li>
+          <li><a href="partners.html"  class="active">Our Partners</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -57,19 +57,42 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Our Partners</li>
+            <li class="current"><a href="partners.html">Our Partners</a></li>
           </ol>
         </nav>
         <h1>Our Partners</h1>
       </div>
     </div>
-    <!-- Hero Banner Image -->
-    <section class="py-0">
-      <div class="container-fluid px-0">
-        <img src="assets/img/partners_banner.png" alt="Our Partners Banner" class="img-fluid w-100"
-          style="max-height: 550px; object-fit: cover;">
+       <!-- Hero Section -->
+    <section id="hero" class="hero-section partners">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content text-center" data-aos="fade-up" data-aos-delay="100">
+        <h1 class="company-name">Our Partners</h1>
+
+        <div class="row gy-4 mt-2 justify-content-center">
+          <div class="col-xl-2 col-md-3 col-6">
+            <div class="logo-box text-center">
+              <a href="deep-pneumatics.html"><img src="assets/img/clients/DeepPneumatics.png" alt="Deep Pneumatics" class="logo-img hero-client"></a>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-3 col-6">
+            <div class="logo-box text-center">
+              <a href="quickair.html"><img src="assets/img/clients/QuickAir.png" alt="Quick Air" class="logo-img hero-client"></a>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-3 col-6">
+            <div class="logo-box text-center">
+              <a href="carl-stahl-craftman.html"><img src="assets/img/clients/CarlstahlCraftman.png" alt="Carlstahl Craftman"
+                  class="logo-img hero-client"></a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </section>
+
+    <!-- /Hero Section -->
   </main>
   <footer id="footer" class="footer">
     <div class="container footer-top">
@@ -81,7 +104,7 @@
           <div class="footer-contact pt-3">
             <p>1138/20/C, Parkash Colony, GTB Nagar</p>
             <p>Backside Veer Palace, Chandigarh Road</p>
-            <p> Ludhiana, Punjab 141010</p>
+            <p>Ludhiana, Punjab 141010</p>
             <p><strong>Email:</strong> <span>info@eternitysolution.in</span></p>
           </div>
         </div>
