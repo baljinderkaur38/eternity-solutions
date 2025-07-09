@@ -4169,3 +4169,10 @@ object-fit: cover;
   font-size:18px;
   color: var(--heading-color);
 }
+.navmenu li:hover>a, .navmenu .active, .navmenu .active:focus {
+        color: #37517e !important;
+        font-weight: bold;
+}
+.scrolled .navmenu li:hover>a, .scrolled  .navmenu .active, .scrolled  .navmenu .active:focus {
+           color: var(--nav-hover-color) !important;
+}
