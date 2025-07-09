@@ -3591,7 +3591,7 @@ section,
 
 .hero-section {
   position: relative;
-  background: url('../img/hero-bg.jpg') center center/cover no-repeat;
+  background: url('../img/hero-bg.webp') center center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -3840,7 +3840,7 @@ section,
   border-width: 2px 2px 2px 2px;
   border-color: var(--heading-color);
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  background-image: url(../img/products/deep/background.png);
+  background-image: url(../img/products/deep/background.webp);
   box-shadow: var(--bs-box-shadow) !important;
 }
 
@@ -4170,9 +4170,9 @@ object-fit: cover;
   color: var(--heading-color);
 }
 .navmenu li:hover>a, .navmenu .active, .navmenu .active:focus {
-        color: #37517e !important;
-        font-weight: bold;
+  color: #37517e !important;
+  font-weight: bold;
 }
 .scrolled .navmenu li:hover>a, .scrolled  .navmenu .active, .scrolled  .navmenu .active:focus {
-           color: var(--nav-hover-color) !important;
+  color: var(--nav-hover-color) !important;
 }
