@@ -4016,6 +4016,9 @@ ol {
   font-weight: 700;
   border-bottom: 2px solid var(--heading-color);
 }
+.hh3 a{
+  color: var(--heading-color) !important;
+}
 
 .hh3::after {
   content: "";
@@ -4031,6 +4034,10 @@ ol {
   float: left;
   color: var(--heading-color);
   padding-bottom: 15px;
+}
+
+.hh5 a{
+  color: var(--heading-color) !important;
 }
 
 .hh5::after {
@@ -4179,5 +4186,8 @@ object-fit: cover;
   font-weight: bold;
 }
 .scrolled .navmenu li:hover>a, .scrolled  .navmenu .active, .scrolled  .navmenu .active:focus {
+  color: var(--nav-hover-color) !important;
+}
+.fixed-top .navmenu li:hover>a, .fixed-top  .navmenu .active, .fixed-top  .navmenu .active:focus {
   color: var(--nav-hover-color) !important;
 }
