@@ -3618,6 +3618,11 @@ section,
   max-width: 1000px;
   padding: 0 20px;
 }
+.hero-section img{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
 
 .welcome-text {
   font-size: 2rem;
