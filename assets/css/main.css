@@ -4181,13 +4181,17 @@ object-fit: cover;
   font-size:18px;
   color: var(--heading-color);
 }
-.navmenu li:hover>a, .navmenu .active, .navmenu .active:focus {
+/* Default style (top of page) */
+.navmenu li:hover > a,
+.navmenu .active,
+.navmenu .active:focus {
   color: #37517e !important;
   font-weight: bold;
 }
-.scrolled .navmenu li:hover>a, .scrolled  .navmenu .active, .scrolled  .navmenu .active:focus {
-  color: var(--nav-hover-color) !important;
-}
-.fixed-top .navmenu li:hover>a, .fixed-top  .navmenu .active, .fixed-top  .navmenu .active:focus {
+
+/* When scrolled — target .scrolled on body */
+body.scrolled .navmenu li:hover > a,
+body.scrolled .navmenu .active,
+body.scrolled .navmenu .active:focus {
   color: var(--nav-hover-color) !important;
 }
